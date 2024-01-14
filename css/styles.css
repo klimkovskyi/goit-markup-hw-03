@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #434455;
 }
 a {
@@ -8,8 +8,49 @@ a {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.position {
+  display: flex;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+/* Main nav */
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+
+/* Logo */
 .link-logo {
+  margin-right: 76px;
+
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   color: #4d5ae5;
@@ -21,14 +62,27 @@ ul {
 .logo-text {
   color: #2e2f42;
 }
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
 .nav-link {
+  display: block;
+  padding: 24px 0;
+
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+
+/* Address */
 .header-address {
+  margin-left: auto;
+}
+.header-address-list {
+  display: flex;
   font-style: normal;
 }
 .header-address-link {
@@ -36,6 +90,9 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+.header-address-item:not(:first-child) {
+  margin-left: 40px;
 }
 .header-address-link:hover,
 .nav-link:hover,
@@ -47,8 +104,12 @@ ul {
   color: #404bbf;
   text-decoration: underline;
 }
+
+/* Hero Section */
 .hero {
+  padding: 188px 0;
   background-color: #2e2f42;
+  text-align: center;
 }
 .hero-title {
   color: #fff;
@@ -59,6 +120,11 @@ ul {
   letter-spacing: 1.12px;
 }
 .hero-button {
+  padding: 16px 32px;
+  margin-top: 48px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
   cursor: pointer;
   background-color: #4d5ae5;
   color: #fff;
@@ -71,10 +137,34 @@ ul {
 .hero-button:focus {
   background-color: #404bbf;
 }
+
+/* Preference section */
+
 .preference-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   color: #2e2f42;
 }
+.preference-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 120px 0;
+}
+.preference-item {
+  width: calc((100% - 24px * 3) / 4);
+}
 .preference-subtitle {
+  margin-bottom: 8px;
+
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -86,14 +176,45 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+
+/* Team section */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+
+  text-align: center;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .team-item {
-  background-color: #fff;
+  width: calc((100% - 24px * 3) / 4);
+  background-color: #ffffff;
 }
-.team-title,
+.team-title {
+  margin-bottom: 72px;
+}
+.team-img,
+.portfolio-img {
+  display: block;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 120px 0;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio-item {
+  width: calc((100% - 24px * 2) / 3);
+}
 .portfolio-title {
+  margin-bottom: 72px;
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
@@ -102,8 +223,15 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.72px;
 }
+.portfolio-subtitle,
+.portfolio-paragraph {
+  padding: 0 16px;
+}
 .team-subtitle,
 .portfolio-subtitle {
+  margin-top: 32px;
+  margin-bottom: 8px;
+
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -112,20 +240,27 @@ ul {
 }
 .team-paragraph,
 .portfolio-paragraph {
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+/* Footer */
 .footer {
   background-color: #2e2f42;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
 }
 .footer .link-logo {
+  margin: 0;
   color: #4d5ae5;
 }
 .footer .logo-text {
   color: #f4f4fd;
 }
 .footer-paragraph {
+  width: 264px;
+  margin-top: 17.5px;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
