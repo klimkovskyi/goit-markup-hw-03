@@ -199,7 +199,7 @@ p {
   gap: 24px;
 }
 .names {
-  margin: 32px 0;
+  padding: 32px 0;
 }
 .team-item {
   width: calc((100% - 24px * 3) / 4);
@@ -214,7 +214,6 @@ p {
 }
 .team-img,
 .portfolio-img {
-  display: block;
 }
 .team-subtitle {
   margin-bottom: 8px;
@@ -244,6 +243,7 @@ p {
 }
 .portfolio-item {
   width: calc((100% - 24px * 2) / 3);
+  border: 1px solid #e7e9fc;
 }
 .portfolio-title {
   margin-bottom: 72px;
